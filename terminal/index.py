@@ -14,9 +14,9 @@ class Terminal:
                             margin: 0 auto;
                             margin-top: 8%;
                             background-color: black;
-                            text-align: center;
+                            text-align: center;  
                             color: white;
-
+                          
                         }
                         form {
                             display: flex;
@@ -42,7 +42,7 @@ class Terminal:
                             border-radius: 4px;
                             cursor: pointer;
                         }
-
+                      
                         pre {
                             background-color: #FFFFFF;
                             padding: 20px;
@@ -72,7 +72,7 @@ class Terminal:
 
 
 
-
+        
 
     @cherrypy.expose
     def execute(self, command):
@@ -85,14 +85,14 @@ class Terminal:
             <html>
                 <head>
                     <title>CherryPy Practice</title>
-
+                   
                 </head>
                 <body style="font-family: sans-serif;
                             max-width: 800px;
                             margin: 0 auto;
                             margin-top: 8%;
                             background-color: black;
-                            text-align: center;
+                            text-align: center;  
                             color: yellow;">
                 <h1 style="color:white;"> Terminal box</h1>
                     <form method="post" action="execute" style="display: flex;
