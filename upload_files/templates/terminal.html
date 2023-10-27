@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>CherryPy Practice</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                margin-top: 8%;
+                background-color: black;
+                text-align: center;
+                color: white;
+            }
+            form {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            input[type="text"] {
+                width: 70%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+            }
+            button[type="submit"] {
+                width: 30%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            pre {
+                background-color: #000000;
+                padding: 20px;
+                margin-top: 20px;
+                border-radius: 4px;
+                white-space: pre-wrap;
+            }
+        </style>
+    </head>
+    <body>
+
+    <h1 > Terminal box</h1>
+        <form method="post" action="execute">
+            <input type="text" name="command" />
+            <button type="submit">Execute Command</button>
+        </form>
+        <div id="output" style="color: yellow; text-align:left; font-size: 16px;">
+            <pre id="output">{{output}}</pre>
+
+
+        </div>
+    </body>
+</html>
